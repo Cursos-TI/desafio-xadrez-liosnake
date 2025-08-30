@@ -6,8 +6,7 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+    
 printf("Bem vindo ao jogo XADREZ nivel iniciante!!!\n");
 
     // Implementação de Movimentação do Bispo
@@ -31,9 +30,17 @@ printf("Rainha se move para...\n");
     printf("Esquerda\n"); // imprime a direção do movimento    
 }
     // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    int movimentocavalo = 1; // para controlar o cavalo
 
+printf("Cavalo se move para...\n");
+
+while (movimentocavalo--)
+{
+    for (int i = 0; i< 2; i++){
+        printf("Baixo\n"); // Imprime 2 casa para baixo
+    }
+        printf("Esqueda\n"); // Imprime uma casa para esqueda
+}
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
